@@ -58,12 +58,15 @@ reporting-disabled = false
 [[graphite]]
   bind-address = ":2003"
   database = "graphite"
-  enabled = false
+  enabled = true
   protocol = "tcp"
   batch-size = 1000
   batch-timeout = "1s"
   consistency-level = "one"
   separator = "."
+  templates = [
+    ".host.env.resource.measurement*"
+  ]
 
 [collectd]
   enabled = false
