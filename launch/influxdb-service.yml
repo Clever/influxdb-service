@@ -24,3 +24,7 @@ expose:
   port: 88
   bind: 8088
   proto: tcp
+- name: graphite
+  port: 2003
+  bind: 2003
+  proto: tcp
