@@ -18,7 +18,4 @@ publish:
     #- latest
     username: $$docker_username
     when:
-      branch: master
-script:
-# no tests here
-  - echo "no tests here"
+      branch: 0.10beta

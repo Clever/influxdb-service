@@ -5,8 +5,8 @@ env:
 resources:
   cpu: 4
 volumes:
-- source: /influx-data
-  target: /data
+- source: /influxdb
+  target: /influxdb
 expose:
 - name: admin
   port: 83
@@ -14,14 +14,9 @@ expose:
   health_check:
     type: http
     path: /
-- name: http-api
+- name: http
   port: 86
   bind: 8086
-- name: protobuf
-  port: 99
-  bind: 8099
-  proto: tcp
-- name: raft
-  port: 90
-  bind: 8090
-  proto: tcp
+  health_check:
+    type: http
+    path: /ping
