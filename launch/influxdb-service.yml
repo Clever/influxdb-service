@@ -5,10 +5,8 @@ env:
 resources:
   cpu: 4
 volumes:
-- source: /influxdb-data
-  target: /influxdb/data
-- source: /mnt/influxdb-wal
-  target: /influxdb/wal
+- source: /influxdb
+  target: /influxdb
 expose:
 - name: admin
   port: 83

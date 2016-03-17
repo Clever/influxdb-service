@@ -16,7 +16,7 @@ reporting-disabled = false
 ###
 
 [meta]
-  dir = "/var/lib/influxdb/meta"
+  dir = "/influxdb/meta"
   hostname = "localhost"
   bind-address = ":8088"
   retention-autocreate = true
@@ -119,7 +119,7 @@ reporting-disabled = false
 
 [hinted-handoff]
   enabled = true
-  dir = "/var/lib/influxdb/hh"
+  dir = "/influxdb/hh"
   max-size = 1073741824
   max-age = "168h"
   retry-rate-limit = 0
