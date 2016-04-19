@@ -18,4 +18,4 @@ publish:
     #- latest
     username: $$docker_username
     when:
-      branch: 0.10beta
+      branch: 0.12
