@@ -2,7 +2,7 @@ FROM google/debian:wheezy
 
 RUN apt-get update && apt-get install -y wget
 
-ENV INFLUXDB_VERSION 0.8.8
+ENV INFLUXDB_VERSION 0.8.9
 RUN wget http://s3.amazonaws.com/influxdb/influxdb_${INFLUXDB_VERSION}_amd64.deb && \
     dpkg -i influxdb_${INFLUXDB_VERSION}_amd64.deb && \
     rm -fr influxdb_${INFLUXDB_VERSION}_amd64.deb && \
