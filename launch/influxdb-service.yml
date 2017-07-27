@@ -26,4 +26,5 @@ expose:
 - name: graphite
   port: 20
   bind: 2003
+  proto: tcp
 team: eng-infra
